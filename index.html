@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will Smith</title>
+  <style>
+    :root {
+      --bg: #111;
+      --text: #f5f5f5;
+      --accent: #00c4ff;
+      --gray: #2b2b2b;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--accent);
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: var(--text);
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: left;
+      color: var(--accent);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .bio {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .bio img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .bio img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 196, 255, 0.4);
+    }
+
+    .bio-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 196, 255, 0.3);
+    }
+
+    .curiosities {
+      background-color: var(--gray);
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 60px;
+    }
+
+    .extra {
+      background-color: var(--gray);
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 30px;
+      position: center;
+      text-align: center;
+    }
+
+    .curiosities ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Will Smith</h1>
+  <nav>
+    <a href="#bio">Biografia</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#curiosidades">Curiosidades</a>
+    <a href="#extra">Extra</a>
+  </nav>
+</header>
+
+<div class="container">
+  <section id="bio" class="bio">
+    <img src="https://conteudo.imguol.com.br/c/entretenimento/77/2017/12/21/will-smith-em-um-maluco-no-pedaco-1513894610335_v2_3x4.jpg" alt="Will Smith sorrindo">
+    <div class="bio-text">
+      <h2 class="section-title">Biografia</h2>
+      <p>Will Smith é um ator, produtor e rapper norte-americano. Nascido em 25 de setembro de 1968 na Filadélfia, ele ganhou fama com a série <strong>Um Maluco no Pedaço</strong> e se consolidou como uma estrela global com filmes como <strong>Homens de Preto</strong>, <strong>Eu Sou a Lenda</strong> e <strong>À Procura da Felicidade</strong>. Carismático e versátil, Will também é conhecido por sua influência cultural e discursos motivacionais.</p>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2 class="section-title">Galeria de Imagens</h2>
+    <div class="gallery">
+      <img src="https://s2.glbimg.com/ZNovUg5HuCk0Kf6uP8TQEsAtTfU=/600x900/smart/e.glbimg.com/og/ed/f/original/2022/03/23/gettyimages-84981772.jpg" alt="Will em evento">
+      <img src="https://pbs.twimg.com/media/DRGr52bVwAAVd4h.jpg:large" alt="Will com roupa social">
+      <img src="https://wallpapersok.com/images/hd/will-smith-close-up-vpvan5wk8va30a41-3.jpg" alt="Will Smith paparazzi">
+      <img src="https://static.stealthelook.com.br/wp-content/uploads/2022/03/looks-de-casais-will-smith-jada-pinkett-smith-3-20220310175337.png" alt="Will e Jaden Smith">
+    </div>
+  </section>
+
+  <section id="curiosidades" class="curiosities">
+    <h2 class="section-title">Curiosidades</h2>
+    <ul>
+      <li>Will Smith foi indicado ao Oscar de Melhor Ator por <strong>Ali</strong>, <strong>À Procura da Felicidade</strong> e venceu por <strong>King Richard</strong>.</li>
+      <li>Ele começou sua carreira como rapper, com o duo DJ Jazzy Jeff & The Fresh Prince.</li>
+      <li>Recusou o papel de Neo em <strong>Matrix</strong>.</li>
+      <li>É um dos poucos atores a ter filmes que arrecadaram mais de $100 milhões por oito anos consecutivos.</li>
+    </ul>
+  </section>
+
+  <section id="extra" class="extra">
+    <h2 class="section-title">Extra</h2>
+    <p>É conhecido por diversos memes nas redes sociais.</p>
+    <img src="https://pm1.aminoapps.com/7481/069216a709c0680123f95cd2c6be5dfb84ce44bbr1-373-372v2_00.jpg" alt="Meme3"> <br> <br> <br> 
+    <img src="https://www.lance.com.br/galerias/wp-content/uploads/2022/03/memes-tapa-will-smith-16.jpg" alt="Meme2"> <br> <br> <br> 
+    <img src="https://content.imageresizer.com/images/memes/Will-Smith-meme-4.jpg" alt="Meme1"> <br> <br> <br> 
+    
+  </section>
+</div>
+
+<footer>
+  <p>Site: Andrey Atividade esmael</p>
+</footer>
+
+</body>
+</html>
